@@ -52,7 +52,6 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Product saveOrUpdateProductForm(ProductForm productForm) {
         Product savedProduct = saveOrUpdate(productFormToProduct.convert(productForm));
-
         System.out.println("Saved Product Id: " + savedProduct.getId());
         return savedProduct;
     }
