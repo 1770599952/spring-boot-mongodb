@@ -25,7 +25,6 @@ public class ProductServiceImpl implements ProductService {
         this.productFormToProduct = productFormToProduct;
     }
 
-
     @Override
     public List<Product> listAll() {
         List<Product> products = new ArrayList<>();
